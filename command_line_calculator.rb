@@ -11,8 +11,10 @@ end
 
 puts "1 = Add          2 = Multiply"
 puts
-puts "3 = Subtract     4 = Divide\n "
-
+puts "3 = Subtract     4 = Divide"
+puts
+puts "5 = Square                 "
+puts
 puts "What operation do you want to use?"
 operation = gets.chomp.to_i
 
@@ -47,6 +49,19 @@ elsif operation == 4
   puts "         ---------------"
   puts "          ANSWER = #{results}"
   puts "         ---------------"
+
+elsif operation == 5
+  if values.length > 1
+    puts "invalid input"
+  end
+  if values.length == 1
+    puts "To what power?"
+    power = gets.chomp.to_i
+    results = values[0]**power
+    puts "         ---------------"
+    puts "          ANSWER = #{results}"
+    puts "         ---------------"
+  end
 else
   puts "         --------------- "
   puts "          INVALID INPUT  "
