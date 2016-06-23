@@ -46,11 +46,3 @@ elsif operation == 4
 else
   puts "Invalid Input"
 end
-
-=begin
-puts "Welcome to our calculator"
-
-puts "How many numbers do you want to use?"
-number = gets.chomp.to_i
-  number.times do
-=end
