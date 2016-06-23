@@ -23,32 +23,32 @@ if operation == 1
   values.each do |value|
     result = result + value
   end
-  puts "Your answer is #{result}!"
-
+  puts "         ---------------"
+  puts "          ANSWER = #{result}"
+  puts "         ---------------"
 elsif operation == 2
   (values).each do |value|
     results = results * value
   end
-  puts "Your answer is #{results}!"
-
+  puts "         ---------------"
+  puts "          ANSWER = #{results}"
+  puts "         ---------------"
 elsif operation == 3
-  result = values[0]*2
   (values).each do |value|
     result = result - value
   end
-  puts "Your answer is #{result}!"
-
+  puts "         ---------------"
+  puts "          ANSWER = #{result}"
+  puts "         ---------------"
 elsif operation == 4
-  results = values[0]**2
   (values).each do |value|
-    if value == 0
-      puts "Your answer is undefined!"
-      exit
-    end
     results = results / value
   end
-  puts "Your answer is #{results}!"
-
+  puts "         ---------------"
+  puts "          ANSWER = #{results}"
+  puts "         ---------------"
 else
-  puts "Invalid Input"
+  puts "         --------------- "
+  puts "          INVALID INPUT  "
+  puts "         ---------------"
 end
