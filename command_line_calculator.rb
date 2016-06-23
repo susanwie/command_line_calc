@@ -4,8 +4,8 @@ puts "How many numbers do you want to use?"
 number = gets.chomp.to_i
 
 values = []
-number.times do
-    puts "What is this number?"
+number.times do |variable|
+    puts "What is number ##{variable+1}?"
     values.push (gets.chomp.to_f)
 end
 
@@ -20,7 +20,7 @@ result = 0
 results = 1
 
 if operation == 1
-  (values).each do |value|
+  values.each do |value|
     result = result + value
   end
   puts "Your answer is #{result}!"
