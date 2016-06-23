@@ -32,13 +32,19 @@ elsif operation == 2
   puts "Your answer is #{results}!"
 
 elsif operation == 3
+  result = values[0]*2
   (values).each do |value|
     result = result - value
   end
   puts "Your answer is #{result}!"
 
 elsif operation == 4
+  results = values[0]**2
   (values).each do |value|
+    if value == 0
+      puts "Your answer is undefined!"
+      exit
+    end
     results = results / value
   end
   puts "Your answer is #{results}!"
